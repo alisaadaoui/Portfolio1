@@ -3,24 +3,25 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  { name: "HTML", level: 85, category: "frontend" },
+  { name: "CSS", level: 80, category: "frontend" },
+  { name: "JavaScript", level: 70, category: "frontend" },
+  { name: "React", level: 65, category: "frontend" },
+  { name: "Tailwind CSS", level: 70, category: "frontend" },
 
-  // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  // Backend and databases
+  { name: "Node.js", level: 65, category: "backend" },
+  { name: "Express.js", level: 65, category: "backend" },
+
+  { name: "MySQL", level: 75, category: "backend" },
+  { name: "MongoDB", level: 55, category: "backend" },
+  { name: "Firebase", level: 50, category: "backend" },
+  { name: "Supabase", level: 40, category: "backend" },
+  { name: "PostgreSQL (Learning)", level: 30, category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
+  { name: "Git/GitHub", level: 70, category: "tools" },
+  { name: "Figma", level: 55, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
 ];
 
@@ -48,7 +49,7 @@ export const SkillsSection = () => {
                 "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-forefround hover:bd-secondary"
+                  : "bg-secondary/70 text-foreground hover:bd-secondary"
               )}
             >
               {category}

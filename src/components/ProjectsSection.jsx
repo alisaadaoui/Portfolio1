@@ -3,30 +3,30 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    title: "Hospital Management System",
+    description: "A mobile hospital management app built with Flutter to manage patients, appointments, and medical records.",
+    image: "/projects/HMS.png",
+    tags: ["Flutter", "Dart", "Firebase"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/alisaadaoui/Hospital-app-",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Personal Portfolio Website",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+      "A modern personal portfolio built with React and Tailwind CSS to showcase my work and skills.",
+    image: "/projects/portfoliowebsite.png",
+    tags: ["React", "TailwindCSS", "Vite"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/alisaadaoui/Portfolio1",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
-    description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    title: "Student Management System",
+    description: 
+      "A desktop application built with JavaFX to manage student records, courses, and grades. Currently under development.",
+    image: "/projects/StudentManagementSystem.png",
+    tags: ["Java", "JavaFX", "MySQL"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -49,19 +49,25 @@ export const ProjectsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, key) => (
             <div
-              key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
-            >
-              <div className="h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
+  key={key}
+  className="group bg-gradient-to-b from-white/5 to-white/[0.02] 
+  backdrop-blur border border-white/10 rounded-xl 
+  overflow-hidden transition-all duration-500 
+  hover:shadow-2xl hover:-translate-y-1 animate-fade-up"
+>
+          <div className="h-48 bg-gradient-to-br from-primary/10 to-transparent flex items-center justify-center p-4">
+
+  <img
+    src={project.image}
+    alt={project.title}
+    className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105"
+  />
+</div>
+
+
 
               <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap justify-center gap-2 mb-4">
                   {project.tags.map((tag) => (
                     <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                       {tag}
@@ -100,7 +106,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/alisaadaoui"
           >
             Check My Github <ArrowRight size={16} />
           </a>
